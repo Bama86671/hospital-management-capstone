@@ -1,0 +1,15 @@
+package com.hospital.AppointmentService;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+@SpringBootApplication
+@EnableFeignClients(basePackages = "com.hospital.AppointmentService.openFeign")
+public class AppointmentServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AppointmentServiceApplication.class, args);
+	}
+
+}
